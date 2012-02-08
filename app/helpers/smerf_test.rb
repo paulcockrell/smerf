@@ -1,2 +1,2 @@
-module SmerfTestHelper
+module SmerfTest
 end

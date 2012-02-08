@@ -141,11 +141,11 @@ module SmerfFormsHelper
       {:class => (level <= 1) ? "smerfQuestion" : "smerfSubquestion"}, false) if (question.question and !question.question.blank?) 
     # Format error
     contents += content_tag(:div, 
-      content_tag(:p, raw("#{image_tag("smerf_error.gif", :alt => "Error")} #{@errors["#{question.item_id}"]["msg"]}")), 
+      content_tag(:p, raw("#{image_tag("smerf_error.png", :alt => "Error")} #{@errors["#{question.item_id}"]["msg"]}")), 
       {:class => "smerfQuestionError"}, false) if (@errors and @errors.has_key?("#{question.item_id}"))    
     # Format help   
     contents += content_tag(:div, 
-      content_tag(:p, raw("#{image_tag("smerf_help.gif", :alt => "Help")} #{question.help}")), 
+      content_tag(:p, raw("#{image_tag("smerf_help.png", :alt => "Help")} #{question.help}")), 
       {:class => "smerfInstruction"}, false) if (!question.help.blank?)    
    
     # Check the type and format appropriatly

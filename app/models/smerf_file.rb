@@ -98,6 +98,6 @@ class SmerfFile
     # Functions format file name from supplied form code
     # Class method
     def SmerfFile.smerf_file_name(code)
-      "#{RAILS_ROOT}/smerf/#{code}.yml"    
+      "#{Rails.root}/smerf/#{code}.yml"    
     end
 end
